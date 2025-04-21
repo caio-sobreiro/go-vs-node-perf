@@ -1,0 +1,7 @@
+services:
+  lgtm:
+    image: grafana/otel-lgtm
+    ports:
+      - 4317:4317 # otel-collector grpc
+      - 4318:4318 # otel-collector http
+      - 8080:3000 # grafana
